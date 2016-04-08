@@ -35,6 +35,13 @@ $jumbotron-bg: white;
 	float: right;
 }
 
-#drop {
-	background-color: #8e44ad;
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
 }
+
+.icon-bar {
+	background-color: white !important;
+}
+
+  
