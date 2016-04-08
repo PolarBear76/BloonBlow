@@ -1,9 +1,14 @@
 <div class="jumbotron center">
+	<% if user_signed_in? %>
+	# do something
+
+	<% else %>
 <h1>Welcome to Crunsher 2.0</h1>
 <p>Lets finish this <%= link_to "Bitch", "#", class: "btn btn-primary" %></p>
 <p> <%= link_to "Log In", "#", class: "btn btn-default btn-lg" %>
 	<%= link_to "Sign Up", "#", class: "btn btn-primary btn-lg" %>
 
 </p>
+<% end %>
 </div>
 
