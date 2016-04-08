@@ -1,19 +1,30 @@
-$body-bg: #bdc3c7 ;
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+$font-family-sans-serif: 'Roboto';
+$background: 'https://wallpaperscraft.com/image/minimalism_sky_clouds_sun_mountains_lake_landscape_95458_1920x1080.jpg' ;
 $navbar-default-bg: #8e44ad;
 $link-color: white;
-$navbar-default-link-color: white;
+$navbar-default-link-color: #ecf0f1;
 $navbar-height: 40px;
 $navbar-default-brand-color: white;
 $jumbotron-bg: white;
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+body {
+  background: url(https://wallpaperscraft.com/image/minimalism_sky_clouds_sun_mountains_lake_landscape_95458_1920x1080.jpg);
+}
+
 .center {
 	text-align: center;
 }
 
 .navbar-brand {
-	font-weight:bold;
+	
+}
+
+.jumbotron {
+	opacity: 0.60;
 }
 
 .white {
@@ -44,4 +55,23 @@ $jumbotron-bg: white;
 	background-color: white !important;
 }
 
+.fade {
+   opacity: 1;
+   transition: .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+.navbar a:hover {
+	color: white !important;
+	text-decoration:underline !important;
+}
+
+.opa {
+	opacity: 0.2 !important;
+}
+
+.blue {
+	color:blue !important;
+}
   
