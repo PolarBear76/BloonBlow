@@ -3,11 +3,12 @@
 $font-family-sans-serif: 'Roboto';
 $background: 'https://wallpaperscraft.com/image/minimalism_sky_clouds_sun_mountains_lake_landscape_95458_1920x1080.jpg' ;
 $navbar-default-bg: #8e44ad;
-$link-color: white;
+
 $navbar-default-link-color: #ecf0f1;
 $navbar-height: 40px;
 $navbar-default-brand-color: white;
 $jumbotron-bg: white;
+
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
@@ -89,4 +90,26 @@ body {
         float:none;
     }
 }
+
+.navbar a {
+  color: white !important;
+}
+
+a {
+  color: #9b59b6 !important;
+}
+.jumbotron a {
+  color: white !important;
+}
+
+.purple {
+  color: #9b59b6 !important;
+}
+
+.dropdown-menu a {
+  color: #9b59b6 !important;
+}
+
+
+
   
