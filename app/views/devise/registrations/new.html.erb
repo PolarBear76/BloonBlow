@@ -1,12 +1,15 @@
+<center>
 <div class="panel panel-default">
   <div class="panel-heading">
+  
     <%= link_to root_path do %>
-  <span class="glyphicon glyphicon-menu-left blue"></span>
+  <span class="glyphicon glyphicon-menu-left blue left"></span>
   <% end %>
+
     <h1>Sign up</h1>
   </div>
 
-  <div class="panel-body">
+  <div id="short" class="panel-body">
     <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %>
 
@@ -35,3 +38,4 @@
     <%= render "devise/shared/links" %>
   </div>
 </div>
+</center>

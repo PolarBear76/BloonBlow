@@ -30,7 +30,7 @@
            
             
            <li><%= link_to edit_user_registration_path do %>
-              <span class="glyphicon glyphicon-wrench fade"></span>
+              <span class="glyphicon glyphicon-wrench purple"></span>
             <% end %>
             <li role="separator" class="divider"></li>
              <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
@@ -40,7 +40,7 @@
         </li>
 
         <% else %>
-          <li><%= link_to "Sign in", new_user_session_path %></li>
+          <li><%= link_to "Log in", new_user_session_path %></li>
         <% end %>
 
         <li><%= link_to "About", about_path %></li>

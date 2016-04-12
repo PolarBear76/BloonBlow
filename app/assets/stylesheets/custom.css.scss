@@ -20,10 +20,6 @@ body {
 	text-align: center;
 }
 
-.navbar-brand {
-	
-}
-
 .jumbotron {
 	opacity: 0.60;
 }
@@ -55,13 +51,6 @@ body {
 .icon-bar {
 	background-color: white !important;
 }
-
-.fade {
-   opacity: 1;
-   transition: .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
-   }
 
 .navbar a:hover {
 	color: white !important;
@@ -109,6 +98,22 @@ a {
 .dropdown-menu a {
   color: #9b59b6 !important;
 }
+
+.btn a {
+  color:black !important;
+  opacity: 1;
+}
+
+.form-control {
+  width: 45%;
+}
+
+.panel {
+  width: 55% !important;
+  opacity: 0.7;
+}
+/*transition: all 0.5s ease; scale: (0.5,0.5);*/
+
 
 
 
