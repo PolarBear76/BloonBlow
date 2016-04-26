@@ -1,6 +1,8 @@
+<% unless user_signed_in? %>
 
+<%= render 'pages/home' %>
 
-<%= render 'pages/home' unless user_signed_in? %>
+<% else %>
 
 <div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
@@ -30,4 +32,6 @@
     </div>
   <% end %>
 </div>
+
+<% end %>
 
