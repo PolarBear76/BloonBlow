@@ -108,10 +108,20 @@ a {
   width: 45%;
 }
 
-.panel {
+.panel1 {
   width: 55% !important;
   opacity: 0.7;
 }
+
+a:active {
+    font-weight: bold;
+  }
+
+  #edit {
+    opacity: 0.8 !important;
+  }
+
+  
 /*transition: all 0.5s ease; scale: (0.5,0.5);*/
 
 

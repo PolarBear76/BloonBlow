@@ -1,5 +1,11 @@
-<div class="panel panel-default">
+<center>
+  <div id="edit" class="panel panel1 panel-default">
   <div class="panel-heading">
+
+    <%= link_to root_path do %>
+  <span class="glyphicon glyphicon-menu-left blue left"></span>
+  <% end %>
+
     <div class="panel-title">
       <h1>Edit <%= resource_name.to_s.humanize %></h1>
     </div>
@@ -41,3 +47,4 @@
     <%= link_to "Back", :back %>
   </div>
 </div>
+</center>

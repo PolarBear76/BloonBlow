@@ -1,0 +1,77 @@
+#pins {
+  transition: all 1s ease;
+	margin: 0 auto;
+  
+}
+
+.box {
+	margin: 5px;
+	width: 214px;
+}
+
+.box img {
+	width: 100%;
+}
+
+#pin-index:hover {
+	-webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: all 0.6s ease;
+       z-index: 1;
+        position: relative;
+       }
+
+       #pin-index:active {
+       	-webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        transition: all 0.2s ease;
+        z-index: 1;
+       }
+
+       img{
+   width: 100%;
+    max-width:300px;
+}
+
+.blur:hover {
+  -webkit-filter: blur(1.8px);
+  transition: all 0.7s ease;
+ z-index:1;
+}
+
+.desc {
+position: absolute;
+  top-margin: -30px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  
+  color: white;
+
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+margin-bottom: 50%;
+  -webkit-transition: visibility opacity 0.2s;
+  font-size: 20px;
+  font-weight: bold;
+ z-index: 2;
+}
+
+#pin-index:hover .desc {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.9s ease;
+-webkit-filter: blur(0px);
+z-index: 2;
+position: absolute;
+}
+
+.desc:hover .blur {
+-webkit-filter: blur(1.7px);
+  
+ z-index:1;
+}
+
