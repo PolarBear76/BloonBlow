@@ -8,17 +8,21 @@
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script>
-  $(function() {
-   $('#flash').delay(500).fadeIn('normal', function() {
-      $(this).delay(2500).fadeOut();
-   });
-});
-  </script>
-  
+  <% unless user_signed_in? %>
+
+ <style>
+  body {
+      background: url('https://wallpaperscraft.com/image/minimalism_sky_clouds_sun_mountains_lake_landscape_95458_1920x1080.jpg');
+  }
+   </style>
+
+   <% end %>
+
 </head>
 <body>
+  <% if user_signed_in? %>
 	<%= render 'layouts/header' %>
+  <% end %>
 
 <div class="container">
 	<% flash.each do |name, msg| %>

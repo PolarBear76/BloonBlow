@@ -30,7 +30,7 @@
       </div>
 
       <div class="form-group">
-        <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i>
+        <%= f.label :current_password %> <i>(to confirm changes)</i>
         <%= f.password_field :current_password, class: "form-control field" %>
       </div>
 
@@ -39,12 +39,14 @@
       </div>
     <% end %>
   </div>
-  <div class="panel-footer">
+  <div class="panel-body">
+    <%= link_to "What is Crunsher?", about_path, class: "btn btn-primary white-link" %>
+</div>
+    <div class="panel-footer">
     <h3>Cancel my account</h3>
 
     <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete, class: "btn btn-warning" %></p>
 
-    <%= link_to "Back", :back %>
   </div>
 </div>
 </center>

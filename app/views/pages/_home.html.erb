@@ -1,13 +1,13 @@
+<div class="container">
+	<div class="clean-btn">
+	<%= link_to "LOG IN", new_user_session_path %>
+</div>
 <div class="jumbotron center">
-	<% if user_signed_in? %>
-	# do something
-
-	<% else %>
 <h1>Welcome to Crunsher 2.0</h1>
 <p>For anyone that has an idea</p>
 <p> 
 	<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg white-link" %>
 </p>
-<% end %>
+</div>
 </div>
 
