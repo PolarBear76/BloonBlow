@@ -132,8 +132,8 @@ a:active {
     min-width: 210px;
   }
 
-  .panel-body {
-    min-width: 250px;
+  .panel {
+    min-width: 250px !important;
   }
 /*transition: all 0.5s ease; scale: (0.5,0.5);*/
 
