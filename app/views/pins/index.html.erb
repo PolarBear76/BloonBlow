@@ -8,7 +8,7 @@
   <% @pins.each do |pin| %>
     <div id ="pin-index" class="box panel panel-default">
     	
-      <div><p class="desc" ><%= pin.description %><p><div class="blur">
+      <div id="overflow"><p class="desc" ><%= pin.description %><p><div class="blur">
       	<%= link_to image_tag(pin.image.url(:medium)), pin %>
       	</div></div>
       <div class="panel-body">
