@@ -30,14 +30,19 @@
            
             
            <li><%= link_to edit_user_registration_path do %>
-              <span class="glyphicon glyphicon-wrench purple"></span>
+              <span class="glyphicon glyphicon-wrench purplefont"></span>
             <% end %>
             <li role="separator" class="divider"></li>
-             <li><%= link_to "Log out", destroy_user_session_path, method: :delete, class: "purple-hover" %></li>
+             <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
           </li>
 
           </ul>
         </li>
+
+<li><%= link_to new_pin_path do %>
+              <span class="glyphicon glyphicon-plus"></span>
+            <% end %>
+        
 
         <% else %>
           <li><%= link_to "Log in", new_user_session_path %></li>

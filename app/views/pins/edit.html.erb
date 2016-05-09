@@ -1,6 +1,10 @@
-<h1>Editing Pin</h1>
+<div class="jumbotron">
+	<%= link_to :back do %>
+  <span class="glyphicon glyphicon-menu-left blue left"></span>
+  <% end %>
+	<h1>Editing Pin</h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @pin %> |
-<%= link_to 'Back', pins_path %>
+<%= link_to 'Show', @pin, class: "btn purple white-link"  %>
+</div>
