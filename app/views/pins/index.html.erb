@@ -13,10 +13,13 @@
       	</div>
       <div class="panel-body">
         
-        <p><strong><%= pin.user.name if pin.user %></strong></p>
+
+        
         
         <% if current_user && pin.user == current_user %>
-          
+        <p class="purplefont"><strong><%= pin.user.name if pin.user %></strong></p>  
+        <% else %>
+        <p><strong><%= pin.user.name if pin.user %></strong></p>
         <% end %>
         
       </div>
