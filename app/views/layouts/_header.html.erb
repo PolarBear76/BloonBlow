@@ -10,7 +10,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to "Crunsher", root_path, class: "navbar-brand navbar-right right"%>
+      <%= link_to "BubbleBlow", root_path, class: "navbar-brand navbar-right right"%>
       
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -19,7 +19,7 @@
         
 
         
-        <% if user_signed_in? %>
+        <!-- <li><%= link_to "profile", profile_path %></li> /!-->
           
         <li class="dropdown">
    
@@ -42,11 +42,7 @@
 <li><%= link_to new_pin_path do %>
               <span class="glyphicon glyphicon-plus"></span>
             <% end %>
-        
-
-        <% else %>
-          <li><%= link_to "Log in", new_user_session_path %></li>
-        <% end %>
+      
         
         
 

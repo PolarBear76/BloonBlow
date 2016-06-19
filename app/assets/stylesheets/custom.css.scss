@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100);
 
-$font-family-sans-serif: 'Gotham SSm', 'Roboto', sans-serif;
+$font-family-sans-serif: 'Roboto','Gotham SSm', sans-serif;
 $body-bg: #ecf0f1;
 $navbar-default-bg: #8e44ad;
 
@@ -8,22 +8,43 @@ $navbar-default-bg: #8e44ad;
 $navbar-default-link-color: #ecf0f1;
 $navbar-height: 40px;
 $navbar-default-brand-color: white;
-$jumbotron-bg: white;
+$jumbotron-bg: #bdc3c7;
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
 
 
+.form-group label {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #34495e;
+}
 
 .center {
 	text-align: center;
 }
 
+.jumbotron p {
+  /*color: #8e44ad;*/
+  color: #34495e;
+}
 
+.jumbotron h2 {
+  color:#34495e;
+}
+
+.jumbotron h1 {
+  /*color: #8e44ad;*/
+  color: #34495e;
+  margin-top: -10px;
+  font-size: 100px;
+  font-weight: bold;
+ }
 
 .jumbotron {
-	opacity: 0.60;
+	opacity: 0.7;
+  margin-top: 20px
 }
 
 .white {
@@ -185,12 +206,11 @@ color: white !important;
 
   }
 
-.clean-btn:hover{
+/*.clean-btn:hover{
   background-color: #9b59b6;
   border-color: #9b59b6;
+}*/
 
-
-}
   .desc:hover img {
     -webkit-filter: blur(1.8px);
   transition: all 0.55s ease;
@@ -201,6 +221,13 @@ color: white !important;
   .purple {
     background-color:#9b59b6;
   }
+
+  .prof_img {
+    border-radius: 100px;
+    width:200px;
+    height:200px;
+  }
+
 /*transition: all 0.5s ease; scale: (0.5,0.5);*/
 
 

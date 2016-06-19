@@ -8,19 +8,18 @@
   <% @pins.each do |pin| %>
     <div id ="pin-index" class="box panel panel-default">
     	
-      <p class="desc" ><%= pin.description %><p><div class="blur">
+        <% if current_user && pin.user == current_user %>
+        <p class="purplefont desc"><strong><%= pin.user.name if pin.user %></strong></p>  
+        <% else %>
+        <p class="desc"><strong><%= pin.user.name if pin.user %></strong></p>
+        <% end %>
+
+      <div class="blur">
       	<%= link_to image_tag(pin.image.url(:medium)), pin %>
       	</div>
       <div class="panel-body">
         
-
-        
-        
-        <% if current_user && pin.user == current_user %>
-        <p class="purplefont"><strong><%= pin.user.name if pin.user %></strong></p>  
-        <% else %>
-        <p><strong><%= pin.user.name if pin.user %></strong></p>
-        <% end %>
+        <%= pin.description %>
         
       </div>
     </div>

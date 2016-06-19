@@ -19,12 +19,13 @@
       </div>
 
       <div class="form-group">
-        <%= f.label :email %>
+        <%= f.label :email%>
         <%= f.email_field :email, autofocus: true, class: "form-control field" %>
       </div>
 
       <div class="form-group">
         <%= f.label :password %>
+        <p> (must be longer than 8 characters)</p>
         <%= f.password_field :password, class: "form-control field" %>
       </div>
 
@@ -39,3 +40,5 @@
   </div>
 </div>
 </center>
+
+

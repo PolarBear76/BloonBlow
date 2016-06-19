@@ -7,6 +7,7 @@ class PinsController < ApplicationController
     @pins = Pin.all.order("created_at DESC")
   end
 
+
   def show
   end
 
@@ -54,4 +55,8 @@ class PinsController < ApplicationController
     def pin_params
       params.require(:pin).permit(:description, :image)
     end
+
+  def prins
+@prins = User.Pin.all
+end
 end
