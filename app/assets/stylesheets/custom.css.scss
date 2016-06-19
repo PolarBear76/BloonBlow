@@ -32,6 +32,10 @@ $jumbotron-bg: #bdc3c7;
   color:#34495e;
 }
 
+.jumbotron h4 {
+  color:#34495e;
+}
+
 .jumbotron h1 {
   /*color: #8e44ad;*/
   color: #34495e;
@@ -224,6 +228,20 @@ color: white !important;
     border-radius: 100px;
     width:200px;
     height:200px;
+  }
+
+  #firstjumbo {
+    background-color: #9b59b6;
+  }
+
+  #firstjumbo h2 {
+    color: white;
+   
+  }
+
+  #firstjumbo h4 {
+    color: white;
+
   }
 
 /*transition: all 0.5s ease; scale: (0.5,0.5);*/

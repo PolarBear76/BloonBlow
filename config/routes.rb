@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   
   get 'profile' => 'pages#profile'
   get 'pages/home'
-  
+  get "first" => "pages#first"
   get 'about' => 'pages#about'
   
  
