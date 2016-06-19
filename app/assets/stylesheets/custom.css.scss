@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100);
 
 $font-family-sans-serif: 'Roboto','Gotham SSm', sans-serif;
-$body-bg: #ecf0f1;
+$body-bg: white;
 $navbar-default-bg: #8e44ad;
 
 
@@ -11,9 +11,7 @@ $navbar-default-brand-color: white;
 $jumbotron-bg: #bdc3c7;
 
 @import 'bootstrap-sprockets';
-@import 'bootstrap';
-
-
+@import 'bootstrap';  
 
 .form-group label {
   font-size: 20px;
