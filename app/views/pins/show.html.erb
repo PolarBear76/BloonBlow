@@ -5,7 +5,7 @@
 		<div class="panel panel-default">
 		<div class="panel-heading center">
 			<%= link_to root_path do %>
-  <span class="glyphicon glyphicon-menu-left blue left"></span>
+  <span class="glyphicon glyphicon-menu-left accentFont left"></span>
   <% end %>
 			<%= image_tag @pin.image.url(:medium) %>
 		</div>
@@ -15,13 +15,12 @@
 
 		<% if @pin.user == current_user %>
 			<%= link_to edit_pin_path(@pin) do %>
-        <span class="glyphicon glyphicon-edit"></span>
-        Edit
+        <span class="glyphicon glyphicon-edit accentFont"></span>
+            
       <% end %>
 
       <%= link_to @pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
-              <span class="glyphicon glyphicon-trash"></span>
-              Delete
+              <span class="glyphicon glyphicon-trash deleteColor"></span>
             <% end %>
 
 		<% end %>

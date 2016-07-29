@@ -1,20 +1,20 @@
 <center>
   <div id="edit" class="panel panel1 panel-default">
-  <div class="panel-heading">
+  <div id="editPanel" class="panel-heading">
 
     <%= link_to :back do %>
-  <span class="glyphicon glyphicon-menu-left blue left"></span>
+  <span class="glyphicon glyphicon-menu-left accentFont left"></span>
   <% end %>
 
     <div class="panel-title">
-      <h1>Edit <%= resource_name.to_s.humanize %></h1>
+      <h1>Edit <%= current_user.name %></h1>
     </div>
   </div>
   <div class="panel-body">
     <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
-      <%= devise_error_messages! %>
+      <%= devise_error_messages! %> </div>
 
-  </div><div class="form-group">
+  <div class="form-group">
         <%= f.label :full_name%>
         <%= f.text_field :name, autofocus: true, class: "form-control field" %>
       </div>
@@ -25,23 +25,23 @@
       </div>
 
       <div class="form-group">
-        <%= f.label :password%> <i>(leave blank if you don't want to change it)</i>
+        <%= f.label :new_password%> 
+        <br>
+        <i>(optional)</i>
         <%= f.password_field :password, class: "form-control field", :autocomplete => "off" %>
       </div>
 
       <div class="form-group">
-        <%= f.label :current_password%> <i>(to confirm changes)</i>
+        <%= f.label :confirm_changes_with_password%>
         <%= f.password_field :current_password, class: "form-control field" %>
       </div>
 
       <div class="form-group">
-        <%= f.submit "Update", class: "btn btn-primary" %>
+        <%= f.submit "Update", class: "btn accentColor" %>
       </div>
     <% end %>
   </div>
-  <div class="form-group">
-    <%= link_to "What is BubbleBlow?", about_path, class: "btn purple white-link" %>
-</div>
+ 
     <div class="form-group">
 
     <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete, class: "btn btn-warning" %></p>

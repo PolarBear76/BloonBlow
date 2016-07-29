@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'pages/home'
   get "first" => "pages#first"
   get 'about' => 'pages#about'
-  
+  get 'bg' => 'images#bg'
  
   root 'pins#index'
 

@@ -8,13 +8,22 @@
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
   <% unless user_signed_in? %>
 
- <style>
+  <style>
   body {
-      background: url('https://wallpaperscraft.com/image/minimalism_sky_clouds_sun_mountains_lake_landscape_95458_1920x1080.jpg');
+      background: linear-gradient(#9b59b6, #3498db, #16a085) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display:block;
   }
    </style>
+
 
    <% end %>
 
@@ -22,11 +31,14 @@
 <body>
   <% if user_signed_in? %>
 	<%= render 'layouts/header' %>
+
   <% end %>
 
 <div class="container">
+  
 	<% flash.each do |name, msg| %>
-			<%= content_tag(:div, msg, class: "alert alert-info") %>
+			<%= content_tag(:div, msg, class: "alert alert-info flash") %>
+
 		<% end %>
 <%= yield %>
 </div>
