@@ -11,8 +11,22 @@
 		</div>
 		<div class="panel-body">
 		<p><%= @pin.description %></p>
-		<p><strong><%= @pin.user.name if @pin.user %></strong></p>
+</center>
+	<div id="pnb">
+		<%= link_to like_pin_path(@pin), method: :put do %>
+		<i id ="blow" class="pnb material-icons darkpurpleFont">blur_on</i>
+		<% end %>
 
+		<p class="pnb accentFont"><%= @pin.get_upvotes.size %></p>
+
+		<%= link_to dislike_pin_path(@pin), method: :put do %>
+		<i id ="pop" class="pnb material-icons darkpurpleFont">flare</i>
+		<% end %>
+
+		<p class="pnb accentFont"><%= @pin.get_downvotes.size %></p>
+</div>
+
+		<br>
 		<% if @pin.user == current_user %>
 			<%= link_to edit_pin_path(@pin) do %>
         <span class="glyphicon glyphicon-edit accentFont"></span>
@@ -24,6 +38,11 @@
             <% end %>
 
 		<% end %>
+<center>
+		<hr>
+
+		<p class="userFont"><strong><%= @pin.user.name if @pin.user %></strong></p>
+		<p class="userFont"><%= @pin.user.email if @pin.user %></p>
 
 		</div>
 	</div>

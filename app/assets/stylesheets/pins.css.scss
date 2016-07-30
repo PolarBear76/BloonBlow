@@ -92,5 +92,22 @@ position: absolute;
   color: #691A99;
 }
 
+#pop:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: all 0.2s ease;
+}
 
+#blow:hover {
+-webkit-transform: scale(1.5);
+-ms-transform: scale(1.5);
+transform: scale(1.5);
+transition: all 0.2s ease;
+}
+
+.pnb {
+  text-align: left;
+  display: inline-block;
+}
 

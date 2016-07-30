@@ -84,22 +84,6 @@ p {
   text-decoration:underline !important;
 }
 
-/*
-@media (min-width: 768px) and (max-width: 991px) {
-    .navbar-collapse.collapse {
-        display: none !important;
-    }
-    .navbar-collapse.collapse.in {
-        display: block !important;
-    }
-    .navbar-header .collapse, .navbar-toggle {
-        display:block !important;
-    }
-    .navbar-header {
-        float:none;
-    }
-} */
-
 .navbar a {
   color: white !important;
 }
@@ -249,6 +233,17 @@ color: white;
   color: white;
 }
 
+#firstjumbo {
+  background-color:#691A99;
+}
+
+.userFont {
+  color: #691A99;
+}
+
+.darkpurpleFont {
+  color: #691A99;
+}
 
 /*kom ihåg, shift cmd och 7 lägger hel rad i kommentar*/
 /*transition: all 0.5s ease; scale: (0.5,0.5);*/

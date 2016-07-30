@@ -14,6 +14,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'protected_attributes'
 gem 'masonry-rails', '~> 0.2.0'
+gem 'file_validators'
+gem 'acts_as_votable', '~> 0.10.0'
 
 group :development, :test do
  gem 'sqlite3'
