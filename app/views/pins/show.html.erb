@@ -2,29 +2,34 @@
 
 <div class="row">
 	<div class="col-md-offset-2 col-md-8">
-		<div class="panel panel-default">
-		<div class="panel-heading center">
-			<%= link_to root_path do %>
+	<%= link_to :back do %>
   <span class="glyphicon glyphicon-menu-left accentFont left"></span>
   <% end %>
-			<%= image_tag @pin.image.url(:medium) %>
-		</div>
-		<div class="panel-body">
-		<p><%= @pin.description %></p>
-</center>
-	<div id="pnb">
-		<%= link_to like_pin_path(@pin), method: :put do %>
-		<i id ="blow" class="pnb material-icons darkpurpleFont">blur_on</i>
+		<div class="panel panel-default">
+
+		<div class="panel-heading center">
+
+  <%= link_to like_pin_path(@pin), method: :put do %>
+		<i id ="blow" class="pnb material-icons darkpurpleFont bigIcon">blur_on</i>
 		<% end %>
 
 		<p class="pnb accentFont"><%= @pin.get_upvotes.size %></p>
 
-		<%= link_to dislike_pin_path(@pin), method: :put do %>
-		<i id ="pop" class="pnb material-icons darkpurpleFont">flare</i>
+			<%= image_tag @pin.image.url(:medium), class: "pinPic" %>
+
+			
+			<%= link_to dislike_pin_path(@pin), method: :put do %>
+		<i id ="pop" class="pnb material-icons darkpurpleFont bigIcon">flare</i>
 		<% end %>
 
+
 		<p class="pnb accentFont"><%= @pin.get_downvotes.size %></p>
-</div>
+		
+		</div>
+		<div class="panel-body">
+		<p><%= @pin.description %></p>
+</center>
+
 
 		<br>
 		<% if @pin.user == current_user %>
@@ -39,6 +44,14 @@
 
 		<% end %>
 <center>
+		<hr>
+		<p class="smallFont"> Based on other users feedback, this idea:</p>
+
+		<% if @pin.get_upvotes.size - @pin.get_downvotes.size < 0 %>
+		<h4 id="grade" class="accentFont"> Suck </h4>
+		<% else %>
+		<h4 id="grade" class="accentFont">Rules</h4>
+		<% end %>
 		<hr>
 
 		<p class="userFont"><strong><%= @pin.user.name if @pin.user %></strong></p>

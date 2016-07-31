@@ -5,7 +5,6 @@ $navbar-default-bg: #9B26AF;
 
 
 $navbar-default-link-color: #ecf0f1;
-$navbar-height: 40px;
 $navbar-default-brand-color: white;
 $jumbotron-bg: rgba(236, 240, 241, 0.6);
 
@@ -24,7 +23,9 @@ p {
 }
 .navbar {
   width: 100%;
-  margin-bottom:10px;}
+  margin-bottom:10px;
+  height: 3vw;
+}
 
 .form-group label {
   font-size: 20px;
@@ -226,7 +227,7 @@ color: white;
 
 
 .bigIcon {
-  font-size: 36px !important;
+  font-size: 8vw !important;
 }
 
 #imageUpload {
@@ -245,6 +246,13 @@ color: white;
   color: #691A99;
 }
 
+.pinPic {
+  display: inline;
+}
+
+.smallFont {
+  font-size: 2vw;
+}
 /*kom ihåg, shift cmd och 7 lägger hel rad i kommentar*/
 /*transition: all 0.5s ease; scale: (0.5,0.5);*/
 
