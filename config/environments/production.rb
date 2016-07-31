@@ -85,7 +85,7 @@ config.paperclip_defaults = {
     bucket:'projectcrunsher',
     access_key_id: 'AKIAJW2WT3HSZH246NHQ',
     secret_access_key: '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',
-    s3_region: 'frankfurt'
+    s3_region: 'eu-central-1'
   }
 }
 
