@@ -78,4 +78,15 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
 config.action_mailer.default_url_options = { :host => 'crunsher2.herokuapp.com' }
+
+config.paperclip_defaults = {
+  storage: :s3,
+  s3_credentials: {
+    bucket:'projectcrunsher',
+    access_key_id: 'AKIAJW2WT3HSZH246NHQ',
+    secret_access_key: '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',
+    s3_region: 'frankfurt'
+  }
+}
+
 end
