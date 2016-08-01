@@ -26,6 +26,15 @@ p {
   height: 3vw;
 }
 
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+
+.icon-bar {
+  background-color: white!important;
+}
+
 .form-group label {
   font-size: 20px;
   color: rgba(52, 73, 94,1.0);
@@ -70,42 +79,8 @@ p {
   margin-left: 10px;
 }
 
-.navbar-toggle {
-  border: none;
-  background: transparent !important;
-}
-
-.icon-bar {
-  background-color: white!important;
-}
-
-.nav {
-  background-color: #9B26AF;
-}
-
-.navbar a {
-  color: white !important;
-  /*background-color: #9B26AF !important;*/
-}
-
-.navbar a:hover {
-  background-color: #9B26AF;
-}
-
 .jumbotron a {
   color: white !important;
-}
-
- .dropdown-menu a {
-  color: #691A99 !important;
-}
-
-.dropdown-menu {
-
-}
-
-.navbar-collapse {
-  border-radius: 5px !important;
 }
 
 .form-control {
@@ -148,7 +123,7 @@ p {
   }
 
   .purple {
-    background-color:#9b59b6;
+    background-color: #9B26AF;
   }
 
   .prof_img {
@@ -173,6 +148,7 @@ p {
   width: 20%;
   margin: 0 auto;
   text-align: center;
+  overflow: hidden;
 }
 
 .btn {
