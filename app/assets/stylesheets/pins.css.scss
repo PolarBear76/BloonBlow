@@ -24,19 +24,19 @@
         position: relative;
        }
 
-       #pin-index:active {
-        -webkit-transform: scale(3);
-        -ms-transform: scale(3);
-        transform: scale(3);
-        z-index: 1;
-        opacity: 0;
-        transition: all 0.7s ease;
-        position: relative;
+ #pin-index:active {
+  -webkit-transform: scale(3);
+   -ms-transform: scale(3);
+   transform: scale(3);
+   z-index: 1;
+   opacity: 0;
+   transition: all 0.7s ease;
+   position: relative;
        }
 
-       img{
-   width: 100%;
-    max-width:300px;
+img {
+  width: 100%;
+  max-width:300px;
 }
 
 .blur:hover {
@@ -47,7 +47,6 @@
 
 .desc {
   position: absolute;
-  
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -63,17 +62,16 @@
 }
 
 #pin-index:hover .desc {
-  visibility: visible;
-  opacity: 1;
-  transition: all 0.9s ease;
-
+visibility: visible;
+opacity: 1;
+transition: all 0.9s ease;
 z-index: 2;
 position: absolute;
 }
 
 .desc-field {
-  size: 5x5 !important;
-  rows: 5 !important;
+size: 5x5 !important;
+rows: 5 !important;
 }
 
 

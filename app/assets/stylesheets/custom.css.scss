@@ -23,7 +23,6 @@ p {
 }
 .navbar {
   width: 100%;
-  margin-bottom:10px;
   height: 3vw;
 }
 
@@ -63,7 +62,7 @@ p {
 
 .right {
   float: right;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .left{
@@ -80,13 +79,18 @@ p {
   background-color: white!important;
 }
 
-.navbar a:hover {
-  
-  text-decoration:underline !important;
+.nav {
+  background-color: #9B26AF;
 }
 
 .navbar a {
   color: white !important;
+  background-color: #9B26AF !important;
+}
+
+.navbar a:hover {
+  color: white !important;
+  background-color: #9B26AF;
 }
 
 .jumbotron a {
@@ -129,33 +133,6 @@ p {
     margin-top: 80px;
   }
 
-  .clean-btn {
-    height: 50px;
-    width: 100px;
-    margin-bottom: 150px;
-    margin-top: 50px;
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
-    text-align: center;
-    border-radius: 3px;
-    margin-bottom: 20px;
-    margin-top: 25px;
-    position: relative;
-  }
-  
-  .clean-btn a {
-    font-size: 15px;
-    color: white !important;
-    position: absolute;
-    position: absolute;
-    top: 45%;
-    left: 45%;
-    transform: translate(-45%, -45%);
-    transition: all 0.5s ease;
-  }
-
-
   .desc:hover img {
     -webkit-filter: blur(1.8px);
     transition: all 0.55s ease;
@@ -194,6 +171,7 @@ p {
 .btn {
   font-weight: bold !important;
   font-size: 20px;
+  margin-top: 1vw;
 }
 
 .navbar-brand {
@@ -224,7 +202,6 @@ color: white;
 .deleteColor {
   color: #c0392b;
 }
-
 
 .bigIcon {
   font-size: 8vw !important;
