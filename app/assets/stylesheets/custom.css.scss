@@ -85,11 +85,10 @@ p {
 
 .navbar a {
   color: white !important;
-  background-color: #9B26AF !important;
+  /*background-color: #9B26AF !important;*/
 }
 
 .navbar a:hover {
-  color: white !important;
   background-color: #9B26AF;
 }
 
@@ -99,6 +98,14 @@ p {
 
  .dropdown-menu a {
   color: #691A99 !important;
+}
+
+.dropdown-menu {
+
+}
+
+.navbar-collapse {
+  border-radius: 5px !important;
 }
 
 .form-control {
