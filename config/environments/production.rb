@@ -82,11 +82,10 @@ config.action_mailer.default_url_options = { :host => 'crunsher2.herokuapp.com' 
 config.paperclip_defaults = {
   storage: :s3,
   s3_credentials: {
-    bucket:'projectcrunsher',
-    access_key_id: 'AKIAJW2WT3HSZH246NHQ',
-    secret_access_key: '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',
-    s3_region: 'eu-central-1'
+    bucket: ENV.fetch('projectcrunsher'),
+    access_key_id: ENV.fetch('AKIAJW2WT3HSZH246NHQ'),
+    secret_access_key: ENV.fetch('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'),
+    s3_region: ENV.fetch('eu-central-1'),
   }
 }
-
 end
