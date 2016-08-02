@@ -3,7 +3,7 @@
 <div class="row">
 	<div class="col-md-offset-2 col-md-8">
 	<%= link_to :back do %>
-  <span class="glyphicon glyphicon-menu-left accentFont left"></span>
+  <span class="glyphicon glyphicon-menu-left accentFont left back"></span>
   <% end %>
 		<div class="panel panel-default">
 
@@ -45,12 +45,34 @@
 		<% end %>
 <center>
 		<hr>
-		<p class="smallFont"> Based on other users feedback, this idea:</p>
+		<p class="smallFont"> Based on other users feedback, this idea is:</p>
 
-		<% if @pin.get_upvotes.size - @pin.get_downvotes.size < 0 %>
-		<h4 id="grade" class="accentFont"> Suck </h4>
+		<% if @pin.get_downvotes.size && @pin.get_upvotes.size == 0 %>
+		<h4 class="neutral grade">Neutral</h4>
 		<% else %>
-		<h4 id="grade" class="accentFont">Rules</h4>
+
+		<% if @pin.get_downvotes.size/@pin.get_upvotes.size <= 1 && @pin.get_downvotes.size/@pin.get_upvotes.size >= 0.8 %>
+		<h4 class="orange grade">Okay</h4>
+
+<% elsif @pin.get_downvotes.size/@pin.get_upvotes.size <= 0.8 && @pin.get_downvotes.size/@pin.get_upvotes.size >= 0.7 %>
+<h4 class="lightgreen grade">Good</h4>
+<% elsif @pin.get_downvotes.size/@pin.get_upvotes.size <= 0.7 && @pin.get_downvotes.size/@pin.get_upvotes.size >= 0.5 %>
+<h4 class="accentFont grade">Great!</h4>
+<% elsif @pin.get_downvotes.size/@pin.get_upvotes.size <= 0.5 && @pin.get_downvotes.size/@pin.get_upvotes.size >= 0.3 %>
+<h4 class="supergreen grade">Amazing!</h4>
+<% elsif @pin.get_downvotes.size/@pin.get_upvotes.size == 0 %>
+<h4 class="supergreen grade">The Best Idea Ever!</h4>
+<% elsif @pin.get_downvotes.size/@pin.get_upvotes.size >= 1 && @pin.get_downvotes.size/@pin.get_upvotes.size <= 1.2 %>
+<h4 class="redorange grade">Not So Good</h4>
+<% elsif @pin.get_downvotes.size/@pin.get_upvotes.size >= 1.2 && @pin.get_downvotes.size/@pin.get_upvotes.size <= 1.3 %>
+<h4 class="lightred grade">Bad</h4>
+<% elsif @pin.get_downvotes.size/@pin.get_upvotes.size >= 1.3 && @pin.get_downvotes.size/@pin.get_upvotes.size <= 1.5 %>
+<h4 class="red grade">Horrible</h4>
+<% elsif @pin.get_downvotes.size/@pin.get_upvotes.size >= 1.5 && @pin.get_downvotes.size/@pin.get_upvotes.size <= 1.7 %>
+<h4 class="darkred grade">A Child of the Underwold</h4>
+
+<% end %>
+
 		<% end %>
 		<hr>
 
