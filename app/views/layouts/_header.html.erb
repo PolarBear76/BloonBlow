@@ -17,12 +17,6 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse purple">
       <ul class="nav navbar-nav left">
         
-      <li>
-            <%= link_to new_pin_path do %>
-              <span class="glyphicon glyphicon-plus"></span>
-            <% end %>
-          </li>
-        
           <li class="dropdown">
    
          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-user"><span ></span></a>
@@ -35,11 +29,12 @@
               <span class="glyphicon glyphicon-cog"></span>
             <% end %>
              <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
-          </li>
-
-            
- 
+           </li>
           </ul>
+             <li> <%= link_to new_pin_path do %>
+              <span class="glyphicon glyphicon-plus"></span>
+            <% end %>
+          </li>
         </li>
          
         
