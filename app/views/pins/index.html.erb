@@ -1,8 +1,11 @@
-<% unless user_signed_in? %>
+ <% unless user_signed_in? %> 
 
 <%= render 'pages/home' %>
 
-<% else %>
+ <% else %> 
+<center>
+ <%= link_to "Blow Bubble", new_pin_path, class: "btn accentColor btn-lg" %>
+ </center>
 
 <div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>

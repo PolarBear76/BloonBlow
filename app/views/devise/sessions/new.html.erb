@@ -4,24 +4,24 @@
     <%= link_to :back do %>
   <span class="glyphicon glyphicon-menu-left blue left"></span>
   <% end %>
-    <div class="panel-title">
+    <div class="panel-title wide">
       <h1>Log in</h1>
     </div>
   </div>
-  <div class="panel-body">
+  <div class="panel-body wide">
     <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
       
-      <div class="form-group">
+      <div class="form-group wide">
         <i class="material-icons accentFont bigIcon">face</i>
         <%= f.email_field :email, class: "form-control field", :autofocus => true, placeholder: "Email Adress"  %>
       </div>
 
-      <div class="form-group">
+      <div class="form-group wide">
         <i class="material-icons accentFont bigIcon">lock_outline</i>
         <%= f.password_field :password, class: "form-control field", placeholder: "Password" %>
       </div>
 
-      <div class="form-group">
+      <div class="form-group wide">
         <div class="checkbox"> 
     <%= f.label :remember_me do %> 
       <%= f.check_box :remember_me %> Remember me 
@@ -29,12 +29,12 @@
   </div> 
       </div>
 
-      <div class="form-group">
+      <div class="form-group wide">
         <%= f.submit "Log in", class: "btn btn-primary" %>
       </div>
     <% end %>
   </div>
-  <div class="panel-footer">
+  <div class="panel-footer wide">
     <%= render "devise/shared/links" %>
   </div>
 </div>

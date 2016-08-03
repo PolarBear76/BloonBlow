@@ -226,6 +226,17 @@ color: white;
 .form-control {
   min-width: 250px;
 }
+
+.wide {
+  min-width: 275px !important;
+}
+
+#bubbleBtn {
+  text-align: center;
+  width: 15vw;
+  height: 5vw;
+  margin: 2vw;
+}
 /*kom ihåg, shift cmd och 7 lägger hel rad i kommentar*/
 /*transition: all 0.5s ease; scale: (0.5,0.5);*/
 
