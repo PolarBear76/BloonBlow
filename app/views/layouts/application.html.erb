@@ -7,6 +7,9 @@
  
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type"               content="article" />
+  <meta property="og:title"              content= "<%= @pin.description %>" />
+  <meta property="og:description"        content="Bubble from thebubbleblow.com" />
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -15,7 +18,7 @@
 
   <style>
   body {
-      background: linear-gradient(#9B26AF, #691A99,#68EFAD) no-repeat center center fixed;
+  background: linear-gradient(#9B26AF, #691A99,#68EFAD) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
