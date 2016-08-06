@@ -21,6 +21,10 @@ p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+a {
+  color: white;
+}
 .navbar {
   width: 100%;
   height: 3vw;
@@ -229,6 +233,10 @@ color: white;
 
 .wide {
   min-width: 280px !important;
+}
+
+.blue {
+  color: #2980b9;
 }
 
 #bubbleBtn {

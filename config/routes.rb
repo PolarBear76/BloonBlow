@@ -13,8 +13,7 @@ end
   get 'pages/home'
   get "first" => "pages#first"
   get 'about' => 'pages#about'
-  get 'bg' => 'images#bg'
- 
+
   root 'pins#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
