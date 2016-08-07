@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+resources :users, only: [:index, :show]
 resources :pins do
   member do
     put "like", to: "pins#upvote"
@@ -8,7 +9,9 @@ resources :pins do
 end
 
   devise_for :users
-  
+
+  # get 'users/:id/pins' => 'Users#pins', :as => :user_pins 
+
   get 'profile' => 'pages#profile'
   get 'pages/home'
   get "first" => "pages#first"
