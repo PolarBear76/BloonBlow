@@ -2,7 +2,7 @@
 <%= form_for @pin, html: { multipart: true } do |f| %>
   <% if @pin.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@pin.errors.count, "error") %> prohibited this bubble from being saved:</h2>
+      <h2><%= pluralize(@pin.errors.count, "error") %> prohibited this bloon from being blown:</h2>
 
       <ul>
       <% @pin.errors.full_messages.each do |msg| %>
@@ -23,7 +23,7 @@
     <%= f.text_area :description, class: "form-control", rows: "3", placeholder: "Describe your idea here!" %>
   </div>
   <div class="form-group">
-    <%= f.submit "Blow Bubble", class: "btn accentColor" %>
+    <%= f.submit "Blow Bloon", class: "btn accentColor" %>
   </div>
 
   <% end %>

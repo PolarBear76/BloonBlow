@@ -1,0 +1,37 @@
+#settingbtn {
+	height: 30px;
+	width: 30px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#profileHeader {
+	color: #7f8c8d;
+}
+
+.profimg {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    text-align: center;
+    img { width: 100% }
+}
+
+.profimgsm {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    text-align: center;
+    margin-left: 2px;
+    img { width: 100% }
+}
