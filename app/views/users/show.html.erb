@@ -1,0 +1,30 @@
+<center>
+
+<%= image_tag(@user.avatar.url(:thumb), class: "profimg") %> 
+	<h1 class="darkpurpleFont"><%= @user.name %></h1>
+
+</center>
+<hr>
+
+<div id="pins" class="transitions-enabled">
+  <% @user.pins.each do |pin| %>
+    <div id ="pin-index" class="box panel panel-default">
+    	
+        <% if current_user && pin.user == current_user %>
+        <p id="currentUserName" class="desc"><strong><%= pin.user.name if pin.user %></strong></p>  
+        <% else %>
+        <p class="desc"><strong><%= pin.user.name if pin.user %></strong></p>
+        <% end %>
+
+      <div class="blur">
+      	<%= link_to image_tag(pin.image.url(:medium)), pin %>
+      	</div>
+      <div id="pinDesc" class="panel-body accentColor">
+        
+        <p>
+        <%= pin.description %>
+        </p>
+      </div>
+    </div>
+  <% end %>
+</div>

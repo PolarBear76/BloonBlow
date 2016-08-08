@@ -83,9 +83,10 @@ Tweet</a>
 
 		<% end %>
 		<hr>
-
+		
+		<%= link_to @pin.user do %>
 		<p class="userFont"><strong><%= @pin.user.name if @pin.user %></strong></p>
-		<p class="userFont"><%= @pin.user.email if @pin.user %></p>
+		<% end %>
 
 		</div>
 	</div>
