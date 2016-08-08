@@ -1,22 +1,20 @@
 Rails.application.routes.draw do
-
-
-resources :pins do
+  devise_for :users
+  resources :pins do
   member do
     put "like", to: "pins#upvote"
     put "dislike", to: "pins#downvote"
   end
 end
-
-  devise_for :users
+  
   
   get 'profile' => 'pages#profile'
   get 'pages/home'
   get "first" => "pages#first"
   get 'about' => 'pages#about'
-
+  get 'bg' => 'images#bg'
+ 
   root 'pins#index'
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
