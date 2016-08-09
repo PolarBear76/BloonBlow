@@ -83,10 +83,12 @@ Tweet</a>
 
 		<% end %>
 		<hr>
-		
-		<%= link_to @pin.user do %>
-		<p class="userFont"><strong><%= @pin.user.name if @pin.user %></strong></p>
-		<% end %>
+<center>
+	<%= link_to @pin.user do %>
+	<%= image_tag(@pin.user.avatar.url(:medium), class: "profimgmd") %> 
+	<p class="userFont"><strong><%= @pin.user.name if @pin.user %></strong></p>
+	<% end %>
+</center>
 
 		</div>
 	</div>
