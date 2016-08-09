@@ -3,7 +3,6 @@
 $font-family-sans-serif: 'Roboto','Gotham SSm', sans-serif;
 $navbar-default-bg: #9B26AF;
 $navbar-default-link-color: #ecf0f1;
-$navbar-default-brand-color: white;
 $jumbotron-bg: rgba(236, 240, 241, 0.6);
 
 @import 'bootstrap-sprockets';
@@ -11,6 +10,23 @@ $jumbotron-bg: rgba(236, 240, 241, 0.6);
 
 html {
 -webkit-font-smoothing: antialiased;
+}
+
+.brandPic{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin-left: 50%;
+}
+
+.brandpic img {
+  border-radius: 40px;
+  height: 3vw;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
 }
 
 p {
@@ -243,6 +259,7 @@ color: white;
   height: 5vw;
   margin: 2vw;
 }
+
 /*kom ihåg, shift cmd och 7 lägger hel rad i kommentar*/
 /*transition: all 0.5s ease; scale: (0.5,0.5);*/
 
