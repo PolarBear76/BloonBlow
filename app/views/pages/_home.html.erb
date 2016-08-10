@@ -1,22 +1,22 @@
 <div class="container">
-	<div class="btn btn-primary">
-	<%= link_to "LOGIN", new_user_session_path, class: "white-link" %>
+        <div class="btn btn-primary">
+        <%= link_to "LOGIN", new_user_session_path, class: "white-link" %>
 </div>
 <div class="jumbotron center">
 <h1>BloonBlow</h1>
 <p>For any idea. Ever.</p>
 
-	<%= link_to "Sign Up", new_user_registration_path, class: "btn accentColor btn-lg" %>
-	<%= link_to "BloonBlow?", about_path, class: "btn darkpurpleColor btn-lg" %>
-	<br>
-	<br>
+        <%= link_to "Sign Up", new_user_registration_path, class: "btn accentColor btn-lg" %>
+        <%= link_to "BloonBlow?", about_path, class: "btn darkpurpleColor btn-lg" %>
+        <br>
+        <br>
 
 </div>
 
 <div id="pins" class="transitions-enabled"> 
   <% @pins.each do |pin| %>
     <div id ="pin-index" class="box panel panel-default">
-    	
+        
         <% if current_user && pin.user == current_user %>
         <p id="currentUserName" class="desc"><strong><%= pin.user.name if pin.user %></strong></p>  
         <% else %>
@@ -24,8 +24,8 @@
         <% end %>
 
       <div class="blur">
-      	<%= link_to image_tag(pin.image.url(:medium)), pin %>
-      	</div>
+        <%= link_to image_tag(pin.image.url(:medium)), pin %>
+        </div>
       <div id="pinDesc" class="panel-body accentColor">
         
         <p>
@@ -35,7 +35,3 @@
     </div>
   <% end %>
 </div>
- 
-
-</div>
-

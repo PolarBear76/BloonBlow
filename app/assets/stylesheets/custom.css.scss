@@ -12,18 +12,14 @@ html {
 -webkit-font-smoothing: antialiased;
 }
 
+
 .brandPic{
   width: 40px;
   height: 40px;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  margin-left: 50%;
-  margin-top:.14px;
-}
-
-.navbar-brand{
-  margin-top: -10px;
+  margin-top:2px;
 }
 
 p {
@@ -39,6 +35,7 @@ a {
 .navbar {
   width: 100%;
   height: 3vw;
+  text-align: center;
 }
 
 .navbar-toggle {
@@ -264,6 +261,9 @@ color: white;
 
 /*kom ihåg, shift cmd och 7 lägger hel rad i kommentar*/
 /*transition: all 0.5s ease; scale: (0.5,0.5);*/
+
+
+
 
 
 

@@ -1,7 +1,7 @@
 #pins {
 	margin: 0 auto;
   overflow: hidden;
-  border-width: 0px;
+  border-width: -1px;
   width: 100%;
 }
 
@@ -111,6 +111,12 @@ background-color: none;
   text-align: left;
   display: inline-block;
   font-size: 5vw;
+}
+
+.pnbsm {
+  text-align: left;
+  display: inline-block;
+  font-size: 3vw;
 }
 
 #pop {
