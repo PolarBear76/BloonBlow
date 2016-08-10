@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="shortcut icon" type="image/jpg" href="images/bg.jpg"/>
+
   <title>BloonBlow</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -11,7 +11,10 @@
   <meta property="og:type"               content="article" />
   <meta property="og:description"        content= "A Bloon from from the BloonBlow!" /> 
 
-  <link rel="shortcut icon" href="https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/13882083_149935975441417_1477663691974187650_n.png?oh=e37e29ec3367f665621e8ad7832b6549&oe=58142298" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/13882083_149935975441417_1477663691974187650_n.png?oh=e37e29ec3367f665621e8ad7832b6549&oe=58142298" type="image/x-icon" /> 
+
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
   <% unless user_signed_in? %>
 
@@ -43,9 +46,9 @@
 		<% end %>
 
   
-      </div>
+      
 <%= yield %>
-
+</div>
 
 </body>
 </html>
