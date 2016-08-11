@@ -10,24 +10,24 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+     <%= link_to image_tag('bg.jpg', class: "brandPic"), root_path, class: "brandPic right"%>
       
-      <%= link_to image_tag('bg.jpg', class: "brandPic"), root_path, class: "brandPic right"%>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav">
-      
+      <ul class="nav navbar-nav navbar-left">
+        
           
-        <li class="dropdown">
+        <li class="dropdown navIcon">
    
          <a href="#" data-toggle="dropdown" role="button" aria-expanded="false"><i class="material-icons">account_circle</i></a>
          
           <ul class="dropdown-menu" role="menu">
 
-                <%= link_to profile_path do %>
+          <li>
+           <%= link_to profile_path do %>
              <%= image_tag(current_user.avatar.url(:thumb), class: "profimgsm") %>
-             <% end %>
-           </li>
+             <% end %></li>
             
            <li><%= link_to edit_user_registration_path do %>
               <span class="glyphicon glyphicon-wrench"></span>
@@ -39,7 +39,7 @@
           </ul>
         </li>
 
- <li><%= link_to new_pin_path do %>
+ <li class="navIcon"><%= link_to new_pin_path do %>
               <span class="glyphicon glyphicon-plus"></span>
             <% end %> 
       
@@ -50,5 +50,7 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
 </nav>
+
+
 
 

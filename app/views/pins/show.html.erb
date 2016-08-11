@@ -5,7 +5,8 @@
   <% end %>
 		<div class="panel panel-default">
 
-		<div class="panel-heading center">
+		<div class="panel-heading">
+		<center>
 
   <%= link_to like_pin_path(@pin), method: :put do %>
 		<i id ="blow" class="pnb material-icons darkpurpleFont bigIcon">blur_on</i>
@@ -22,7 +23,7 @@
 
 
 		<p class="pnbsm accentFont"><%= @pin.get_downvotes.size %></p>
-		
+		</center>
 		</div>
 		<div class="panel-body">
 		<p><%= @pin.description %></p>

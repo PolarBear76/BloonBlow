@@ -2,10 +2,12 @@
 <html>
 <head>
 
+<!-- <meta charset="UTF-8"> -->
+
   <title>BloonBlow</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
- 
+
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:type"               content="article" />
@@ -13,40 +15,38 @@
 
   <link rel="shortcut icon" href="https://scontent-fra3-1.xx.fbcdn.net/v/t1.0-9/13882083_149935975441417_1477663691974187650_n.png?oh=e37e29ec3367f665621e8ad7832b6549&oe=58142298" type="image/x-icon" /> 
 
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
   <% unless user_signed_in? %>
 
   <style>
   body {
-  background: linear-gradient(#9B26AF, #9b59b6,#68EFAD) no-repeat center center fixed;
+      background: linear-gradient(#9b59b6, #691A99) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display:block; 
+  display:block;
   }
-   </style> 
+   </style>
 
 
    <% end %>
 
 </head>
 <body>
-
   <% if user_signed_in? %>
-	<%= render 'layouts/header' %>
+  <%= render 'layouts/header' %>
+
   <% end %>
 
 <div class="container">
   
-	<% flash.each do |name, msg| %>
-			<%= content_tag(:div, msg, class: "alert alert-info flash") %>
-		<% end %>
+  <% flash.each do |name, msg| %>
+      <%= content_tag(:div, msg, class: "alert alert-info flash") %>
 
-  
-      
+    <% end %>
 <%= yield %>
 </div>
 

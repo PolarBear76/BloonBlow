@@ -6,7 +6,9 @@ $navbar-default-link-color: #ecf0f1;
 $jumbotron-bg: rgba(236, 240, 241, 0.6);
 
 @import 'bootstrap-sprockets';
-@import 'bootstrap';  
+@import 'bootstrap';
+
+
 
 html {
 -webkit-font-smoothing: antialiased;
@@ -22,6 +24,8 @@ html {
   margin-top:2px;
 }
 
+
+
 p {
   font-size: 150%;
   text-rendering: optimizeLegibility;
@@ -31,11 +35,6 @@ p {
 
 a {
   color: white;
-}
-.navbar {
-  width: 100%;
-  height: 3vw;
-  text-align: center;
 }
 
 .navbar-toggle {
@@ -57,14 +56,6 @@ a {
   color: rgba(52, 73, 94,1.0);
 }
 
-.center {
-  text-align: center;
-}
-
-.centerBrand {
-  text-align: center;
-  width: 40px;
-}
 
 .jumbotron p {
  color: white;
@@ -78,12 +69,16 @@ a {
   font-size: 8vw;
   color: white;
   margin-top: -10px;
-  font-weight: lighter;
+  font-weight: normal;
  }
 
 .jumbotron {
   margin-top: 20px
 
+}
+
+.small {
+  font-size: 12px
 }
 
 .right {
@@ -143,12 +138,6 @@ a {
     background-color: #9B26AF;
   }
 
-  .prof_img {
-    border-radius: 100px;
-    width:200px;
-    height:200px;
-  }
-
   #firstjumbo h2 {
     color: white;
    
@@ -173,10 +162,6 @@ a {
   font-weight: bold !important;
   font-size: 20px;
   margin-top: 1vw;
-}
-
-.navbar-brand {
-  color: white;
 }
 
 #editPanel {
@@ -257,6 +242,16 @@ color: white;
   width: 15vw;
   height: 5vw;
   margin: 2vw;
+}
+
+.header1 {
+  color:black;
+  opacity: 0.8;
+  font-weight: lighter;
+}
+
+.navIcon {
+  font-size: 20px;
 }
 
 /*kom ihåg, shift cmd och 7 lägger hel rad i kommentar*/
