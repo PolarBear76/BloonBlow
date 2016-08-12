@@ -7,4 +7,11 @@ class UsersController < ApplicationController
         format.xml { render :xml => @user }
     end
   end
+
+  def follow
+    @user = User.find(params[:id])
+    current_user.follow(@user)
+    redirect_to :back
+  end
+  
 end

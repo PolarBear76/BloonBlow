@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   
-  resources :users do
+ resources :users do
   member do
     get :follow
     get :unfollow

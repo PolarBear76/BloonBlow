@@ -7,14 +7,14 @@
 <h1>BloonBlow</h1>
 <p>For any idea. Ever.</p>
 
-        <%= link_to "Sign Up", new_user_registration_path, class: "btn accentColor btn-lg" %>
+        <%= link_to "Sign Up", new_user_registration_path, class: "btn accentColor btn-lg" %> 
         <%= link_to "BloonBlow?", about_path, class: "btn darkpurpleColor btn-lg" %>
         <br>
         <br>
 
 </div>
 
-<div id="pins" class="transitions-enabled"> 
+<div id="pins" class="transitions-enabled">  
   <% @pins.each do |pin| %>
     <div id ="pin-index" class="box panel panel-default">
         
@@ -36,4 +36,4 @@
     </div>
   <% end %>
   </center>
-</div>
+ </div> 
