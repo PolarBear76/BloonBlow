@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+acts_as_followable
+acts_as_follower
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
@@ -11,8 +13,5 @@ class User < ActiveRecord::Base
 
   has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100#" }, :default_url => "https://www.coachup.com/static/images/missing-profile-photo.png"
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
-
-
-
 
 end
