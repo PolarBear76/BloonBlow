@@ -11,7 +11,8 @@ class PinsController < ApplicationController
 
 
   def index
-    @pins = Pin.all.order("created_at DESC")
+     # @pins = Pin.subscribed current_user.followers
+     @pins = Pin.all.order("created_at DESC")
   end
 
   def show

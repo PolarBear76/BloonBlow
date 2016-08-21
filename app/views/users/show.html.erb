@@ -6,12 +6,11 @@
 <%= image_tag(@user.avatar.url(:medium), class: "profimg") %> 
 	<h1 class="darkpurpleFont"><%= @user.name %></h1>
 
-<!-- <table id="followTable"> 
-<tr><td class="followCell"><h1 class="accentFont"> <%= @user.followers_count %></h1></td><td><h1> Followers</h1></td></tr>
-</table> -->
+<!-- <table id="followTable">  -->
+<!-- <tr><td class="followCell"><h1 class="accentFont"> <%= @user.followers_count %></h1></td><td><h1> Followers</h1></td></tr> -->
+<!-- </table> -->
 
-
-<!-- <%= link_to "Follow", follow_user_path(@user),class: "btn accentColor btn-lg"%> -->
+ <!-- <%= link_to "Follow", follow_user_path(@user),class: "btn accentColor btn-lg"%>  -->
 
 </center>
 <hr>
@@ -39,33 +38,12 @@
   <% end %>
 </div>
   
-  <!-- <br> -->
-  <!-- <hr> -->
-  <!-- <br> -->
+  <br>
+  <hr>
+  <br>
 
-<!-- <% @user.followers.each do |user| %> 
 
-<div id="pins" class="transitions-enabled">
-  <% @user.pins.each do |pin| %>
-    <div id ="pin-index" class="box panel panel-default">
-      
-        <% if current_user && pin.user == current_user %>
-        <p id="currentUserName" class="desc"><strong><%= pin.user.name if pin.user %></strong></p>  
-        <% else %>
-        <p class="desc"><strong><%= pin.user.name if pin.user %></strong></p>
-        <% end %>
 
-      <div class="blur">
-        <%= link_to image_tag(pin.image.url(:medium)), pin %>
-        </div>
-      <div id="pinDesc" class="panel-body accentColor">
-        
-        <p>
-        <%= pin.description %>
-        </p>
-      </div>
-    </div>
-  <% end %>
-</div>
-  
-  <% end %> -->
+
+
+

@@ -15,5 +15,6 @@ acts_as_follower
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
   has_many :subscribed, class_name: "Relationship", foreign_key: "followed_id"
-   has_many :followers, class_name: "Relationship", foreign_key: "follower_id"
+  has_many :followers, class_name: "Relationship", foreign_key: "follower_id"
+
 end

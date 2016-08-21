@@ -1,5 +1,6 @@
 class Pin < ActiveRecord::Base
 	belongs_to :user
+	scope :subscribed, ->(followers) { where user_id: followers }
 	acts_as_votable
 	# acts_as_commentable
 	has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "http://www.penguinstats.com/images/not-available.png"

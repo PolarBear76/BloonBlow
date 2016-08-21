@@ -14,6 +14,11 @@
 	width: 100%;
 }
 
+#pin-index {
+  transition: all 0.4s ease;
+  transition: all translate3d( 0, 0, 0);
+}
+
 #pin-index:hover {
 	-webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -95,7 +100,7 @@ rows: 5 !important;
   -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
   background-color: none !important;
 }
 
@@ -103,14 +108,15 @@ rows: 5 !important;
 -webkit-transform: scale(1.5);
 -ms-transform: scale(1.5);
 transform: scale(1.5);
-transition: all 0.2s ease;
+transition: all 0.4s ease;
 background-color: none;
 }
 
 .pnb {
   text-align: left;
   display: inline-block;
-  font-size: 5vw;
+  font-size: 6vw !important;
+  transition: all 0.3s ease;
 }
 
 .pnbsm {

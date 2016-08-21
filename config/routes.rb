@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
   
- resources :users do
-  member do
-    get :follow
-    get :unfollow
+resources :users do
+    member do
+      get :follow
+      get :unfollow
+    end
   end
-end
 
   resources :pins do
   member do

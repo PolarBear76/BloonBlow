@@ -9,7 +9,7 @@
 		<center>
 
   		<%= link_to like_pin_path(@pin), method: :put do %>
-		<i id ="blow" class="pnb material-icons darkpurpleFont bigIcon">blur_on</i>
+		<i id ="blow" class="pnb material-icons blue">blur_on</i>
 		<% end %>
 
 		<p class="pnbsm accentFont"><%= @pin.get_upvotes.size %></p>
@@ -18,7 +18,7 @@
 
 			
 			<%= link_to dislike_pin_path(@pin), method: :put do %>
-		<i id ="pop" class="pnb material-icons darkpurpleFont bigIcon">flare</i>
+		<i id ="pop" class="pnb material-icons deleteColor">flare</i>
 		<% end %>
 
 
