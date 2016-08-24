@@ -1,8 +1,8 @@
- <% unless user_signed_in? %> 
+ <% unless user_signed_in? %>
 
 <%= render 'pages/home' %>
 
- <% else %> 
+ <% else %>
  <center>
 <i class="material-icons bigIcon header1">explore</i>
 <h1 class="header1">Explore</h1>
@@ -14,9 +14,9 @@
 <div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
     <div id ="pin-index" class="box panel panel-default">
-    	
+
         <% if current_user && pin.user == current_user %>
-        <p id="currentUserName" class="desc"><strong><%= pin.user.name if pin.user %></strong></p>  
+        <p id="currentUserName" class="desc"><strong><%= pin.user.name if pin.user %></strong></p>
         <% else %>
         <p class="desc"><strong><%= pin.user.name if pin.user %></strong></p>
         <% end %>
@@ -25,10 +25,10 @@
       	<%= link_to image_tag(pin.image.url(:medium)), pin %>
       	</div>
       <div id="pinDesc" class="panel-body accentColor">
-        
+
         <p>
         <%= pin.description %>
-      
+
         </p>
       </div>
     </div>
@@ -36,4 +36,3 @@
 </div>
 
 <% end %>
-

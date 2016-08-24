@@ -6,12 +6,23 @@ $navbar-default-bg: #9B26AF;
 $navbar-default-link-color: #ecf0f1;
 $jumbotron-bg: rgba(236, 240, 241, 0.6);
 
+
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
 a:hover {
   color: #34495e !important;
   transition: all 0.6s ease;
+}
+
+#footer {
+  text-align: center;
+  height: 15px;
+}
+
+.navbar-text {
+  color: white !important;
+  font-size: 18px;
 }
 
 .btn-primary {
