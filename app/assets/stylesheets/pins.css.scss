@@ -19,12 +19,12 @@ $darkpurplecolor: #8e44ad;
 	width: 100%;
 }
 
-#pin-index {
-  transition: all 0.4s ease;
-  transition: all translate3d( 0, 0, 0);
+.pin-index {
+  transition: all 0.4s ease !important;
+  transition: all translate3d( 0, 0, 0) !important;
 }
 
-#pin-index:hover {
+.pin-index:hover {
 	-webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -34,7 +34,7 @@ $darkpurplecolor: #8e44ad;
   position: relative;
 }
 
- #pin-index:active {
+ .pin-index:active {
   -webkit-transform: scale(3);
    -ms-transform: scale(3);
    transform: scale(3);
@@ -71,7 +71,7 @@ img {
   -webkit-font-smoothing: antialiased;
 }
 
-#pin-index:hover .desc {
+.pin-index:hover .desc {
 visibility: visible;
 opacity: 1;
 transition: all 0.9s ease;
@@ -85,19 +85,19 @@ rows: 5 !important;
 }
 
 
-#pinDesc {
+.pinDesc {
   background-color: white;
   max-height: 100px !important;
   overflow: hidden;
 }
 
-#pinDesc p{
+.pinDesc p{
   color: #8e44ad;
   font-size: 18px;
   font-weight: bold;
 }
 
-#currentUserName {
+.currentUserName {
   color: #68EFAD;
 }
 
