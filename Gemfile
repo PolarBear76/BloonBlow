@@ -18,7 +18,6 @@ gem 'file_validators'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'acts_as_commentable'
 gem "acts_as_follower"
-gem 'acts-as-taggable-on', '~> 4.0'
 
 group :development, :test do
  gem 'sqlite3'
