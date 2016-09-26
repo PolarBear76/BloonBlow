@@ -1,41 +1,27 @@
- <% unless user_signed_in? %>
-
-<%= render 'pages/home' %>
-
- <% else %>
- <center>
-<i class="material-icons bigIcon header1">explore</i>
-<h1 class="header1">Explore</h1>
-
-<div class="container">
- <hr>
-</div>
-
- <%= link_to "Blow Bloon", new_pin_path, class: "btn accentColor btn-lg" %>
- </center>
-
-<div id="pins" class="transitions-enabled">
-  <% @pins.each do |pin| %>
-    <div class="pin-index box panel panel-default">
-        
+<% unless user_signed_in? %>
+  <%= render 'pages/home' %>
+<% else %>
+  <div class="container center">
+    <i class="material-icons bigIcon header1">explore</i>
+    <h1 class="header1">Explore</h1>
+    <hr>
+     <%= link_to "Blow Bloon", new_pin_path, class: "btn accentColor btn-lg" %>
+  </div>
+  <div id="pins" class="transitions-enabled">
+    <% @pins.each do |pin| %> 
+      <div class="pin-index box panel panel-default">
         <% if current_user && pin.user == current_user %>
-        <p class="currentUserName desc"><strong><%= pin.user.name if pin.user %></strong></p>  
+          <p class="accentFont desc"><strong><%= pin.user.name if pin.user %></strong></p>  
         <% else %>
-        <p class="desc"><strong><%= pin.user.name if pin.user %></strong></p>
+          <p class="desc"><strong><%= pin.user.name if pin.user %></strong></p>
         <% end %>
-
       <div class="blur">
         <%= link_to image_tag(pin.image.url(:medium)), pin %>
-        </div>
-      <div class="pinDesc panel-body accentColor">
-        
-        <p>
-        <%= pin.description %>
-        </p>
       </div>
-    </div>
+      <div class="pinDesc panel-body accentColor">  
+        <p><%= pin.description %></p>
+      </div>
+      </div>
   <% end %>
- 
  </div> 
-
 <% end %>

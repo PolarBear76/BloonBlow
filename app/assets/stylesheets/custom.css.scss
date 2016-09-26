@@ -1,24 +1,25 @@
-/*@import url(https://fonts.googleapis.com/css?family=Roboto:200);*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 $font-family-sans-serif: 'Montserrat', 'Roboto','Gotham SSm', sans-serif;
-$navbar-default-bg: #9B26AF;
-$navbar-default-link-color: #ecf0f1;
+$navbar-default-bg: white;
+$navbar-default-link-color: #34495e;
 $jumbotron-bg: rgba(236, 240, 241, 0.6);
-$body-color: #bdc3c7;
 $darkpurplecolor: #8e44ad;
-
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
-a:hover {
-  color: #34495e !important;
-  transition: all 0.6s ease;
+.white {
+  color: white !important;
+}
+
+.inline {
+  display: inline-block;
 }
 
 .center {
   text-align: center;
+  margin: auto;
 }
 
 #footer {
@@ -39,95 +40,11 @@ a {
   transition: all 0.6s ease;
 }
 
-html {
--webkit-font-smoothing: antialiased;
-}
-
-#landingjumbo .bigIcon {
-  margin-left: 40px;
-  margin-right: 40px;
-  color: #2c3e50;
-}
-
-#landingjumbo h1{
-display: inline-block;
-margin-right: 30px;
-margin-left: 30px;
-font-size: 3vw;
-}
-
-.brandPic{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  margin-top:2px;
-}
-
-.signip {
-  border: 10px;
-  border-radius: 5px;
-  padding: 5px;
-  width: 10%;
-  display: inline-block;
-  text-align: center;
-}
-
-#in {
-  background-color: transparent;
-  border: 1px solid white;
-  text-align: center;
-  float: left;
-  height: 50px;
-  width: 100px;
-  margin-left: 20px;
-  position: relative;
-  border-radius: 3px;
-  margin-top: 50px;
-}
-
-#in h3 {
-  font-size: 30px;
-  position: absolute;
-  margin-left: 20px;
-}
-
-#landingjumbo {
-  background-color: blue;
-  width: 100%;
-  margin-top: 200px;
-  display: block;
-
-}
-
-.lhminor {
-  color: white;
-  margin-left: 7%;
-  margin-top: 50px;
-}
-
-.lhminorer {
-  margin-left: 5%;
-  color: white;
-}
-
-
 p {
   font-size: 150%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  color: white;
-}
-
-.landheader {
-  display: inline-block;
-  color: white;
- margin-top: -1px;
 }
 
 .navbar-toggle {
@@ -136,7 +53,7 @@ a {
 }
 
 .icon-bar {
-  background-color: white!important;
+  background-color: #34495e !important;
 }
 
 .form-group label {
@@ -159,7 +76,6 @@ a {
 }
 
 .jumbotron h1 {
-  /*font-size: 8vw;*/
   color: white;
   margin-top: -10px;
   font-weight: normal;
@@ -167,7 +83,6 @@ a {
 
 .jumbotron {
   margin-top: 20px;
-  /*background: linear-gradient(to bottom right, #8e44ad, #9b59b6, #2980b9);*/
 }
 
 .small {
@@ -258,7 +173,7 @@ a {
 }
 
 #editPanel {
-  background-color: #691A99;
+  background-color: #691A99 ;
 }
 
 #editPanel h1{
@@ -266,12 +181,12 @@ color: white;
 }
 
 .accentColor {
-  background-color: #68EFAD;
+  background-color: #99ffcc;
   color: white;
 }
 
 .accentFont {
-  color: #68EFAD;
+  color: #99ffcc !important;
 }
 
 .glyphicon-menu-left {
@@ -320,6 +235,7 @@ color: white;
 
 .form-control {
   min-width: 250px;
+  margin: auto;
 }
 
 .wide {
@@ -338,14 +254,27 @@ color: white;
 }
 
 .header1 {
-  color:black;
-  opacity: 0.8;
+  color: #34495e;
+  opacity: 0.9;
   font-weight: lighter;
 }
 
 .navIcon {
   font-size: 20px;
 }
+
+.centerElement {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  min-width: 300px;
+}
+
+
+.wetAsphalt {
+  color: #34495e;
+}
+
 /*kom ihåg, shift cmd och 7 lägger hel rad i kommentar*/
 /*transition: all 0.5s ease; scale: (0.5,0.5);*/
 

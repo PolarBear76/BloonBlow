@@ -1,22 +1,12 @@
-<center>
-<div id="edit" class="panel panel1 panel-default wide">
-  <div id="editPanel" class="panel-heading">
-
-  	<%= link_to :back do %>
-  <span class="glyphicon glyphicon-menu-left accentFont left"></span>
-  <% end %>
-	
-  <div class="panel-title">
-	<h1>Blow a Bloon</h1>
+<%= link_to :back do %>
+ 	<span class="glyphicon glyphicon-menu-left accentFont left"></span>
+<% end %>
+<div class="container center">
+	<i class="material-icons bigIcon header1">bubble_chart</i>
+	<h1 class="header1">Blow Bloon</h1>
+	<hr>
+	<div class="form-group">
+		<%= render 'form' %>
+	</div>
 </div>
 
-<div class="panel-body">
-	   <div class="form-group">
-
-<%= render 'form' %>
-
-</div>
-
-</div>
-</div>
-</center>

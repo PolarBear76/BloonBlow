@@ -1,22 +1,9 @@
-<center>
-<div id="edit" class="panel panel1 panel-default">
-  <div id="editPanel" class="panel-heading">
-
-  	<%= link_to :back do %>
-  <span class="glyphicon glyphicon-menu-left accentFont left"></span>
-  <% end %>
-	
-  <div class="panel-title">
-	<h1>Edit Bloon</h1>
+<div class="container center">
+	<i class="material-icons bigIcon header1">edit</i>
+	<h1 class="header1">Edit Bloon</h1>
+	<hr>
+	<div class="form-group">
+		<%= render 'form' %>
+	</div>
 </div>
 
-<div class="panel-body">
-	   <div class="form-group">
-
-<%= render 'form' %>
-
-</div>
-
-</div>
-</div>
-</center>

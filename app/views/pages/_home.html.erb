@@ -1,75 +1,35 @@
-    <div class="container">
-        <div class="btn btn-primary">
-        <%= link_to "LOGIN", new_user_session_path, class: "white-link" %>
-</div>
-
-<div class="jumbotron center">
-<h1>BloonBlow</h1>
-<p>For any idea. Ever.</p>
-
-        <%= link_to "Sign Up", new_user_registration_path, class: "btn accentColor btn-lg" %> 
-        <%= link_to "BloonBlow?", about_path, class: "btn darkpurpleColor btn-lg" %>
-        <br>
-        <br>
-
-</div>
-
-<div id="pins" class="transitions-enabled">
-  <% @pins.each do |pin| %>
-    <div class="pin-index box panel panel-default">
-        
-        <% if current_user && pin.user == current_user %>
-        <p class="currentUserName desc"><strong><%= pin.user.name if pin.user %></strong></p>  
-        <% else %>
-        <p class="desc"><strong><%= pin.user.name if pin.user %></strong></p>
-        <% end %>
-
-      <div class="blur">
-        <%= link_to image_tag(pin.image.url(:medium)), pin %>
-        </div>
-      <div class="pinDesc panel-body accentColor">
-        
-        <p>
-        <%= pin.description %>
-        </p>
-      </div>
-    </div>
-  <% end %>
- 
- </div> 
- </div>
-
- <!--
-
-
-   <%= link_to "Login", new_user_session_path, class: "btn btn-primary btn-lg left" %> 
-
- <center><h2 class="center landheader">BloonBlow</h2><%= image_tag('bg.jpg', class: 'profimgsm landheader') %> 
-
-
- <%= link_to new_user_registration_path do %>  
-	<div class="accentColor right signip">
-	<i class="material-icons bigIcon">accessibility</i>
-	<h1>Sign Up</h1>
+<div id="landPic">
+	<%= image_tag('landpic.jpg')%> 
+	
+	<div class="btn btn-primary logBtn">
+        	<%= link_to "LOGIN", new_user_session_path, class: "white-link" %>
 	</div>
-<% end %> 
+	<!-- <div class="landheader"> -->
+			<!-- <%= image_tag('icon.jpg', class: 'landIcon') %>  <h1>BloonBlow</h1> -->
+		<!-- </div> -->
+	<div class="landDiv right"> 
+		<!-- <p><span class="smallest">Share your ideas easy</span> <br><span class="middle">Discover ideas from all over the world</span> <br><span class="biggest">Judge. Everything.</span></p> -->
+		<%= image_tag('icon.jpg', class: 'landIcon inline') %>  <h1 class="inline biggest">BloonBlow</h1>
+		<h2 class="middle">Share, Discover and Judge ideas</h2>
+ 		<%= link_to "Get Started", new_user_registration_path, class: "btn accentColor btn-lg" %>
+	</div>
 
-<h1 class="lhminor">Share and Discover Great Ideas.</h1><h3 class="lhminor"> Or Awful Ideas. <br> It doesn't matter to us. </h3>
- <%= link_to "Get Started", new_user_session_path, class: "btn accentColor btn-lg" %> 
- <div><%= image_tag('bloon', class: 'right') %></div> 
- <br>
- <br>
- <br>
- 
- <div id="landingjumbo">
+	<!-- <h2 id="readmore">Read more</h2> -->
+	<div class="downBtn">
+	<a href="#about"><i class="material-icons bigIcon white">keyboard_arrow_down</i></a>
+	</div>
+</div>
 
- <i class="material-icons bigIcon">present_to_all</i>
- <i class="material-icons bigIcon">explore</i>
- <i class="material-icons bigIcon">gavel</i>
- <br>
- <h1>Share</h1><h1>Discover</h1><h1>Judge</h1>
- <h3>At BloonBlow, you can share any idea you want by "blowing a Bloon", we can't promise that people will love them, we can only promise to deliver a fast and simple platform where you can hang out.<br><br>Explore others ideas easily and be inspired by thinkers from all over the world and share their ideas seamlessly on Facebook and Twitter. You can find anything on BloonBlow, from complex and well though-out statements, to half drunken suggestions.<br><br> On BloonBlow you can do what people love to do most online, judge. Through a simple voting system you can judge other peoples Bloons and either Blow them up, or Pop them. By looking at the Blows and Pops, BloonBlow sets a grade on your Bloon, so you can see if it's the best idea ever, or if it's just okay.</h3>
-
-
- </center>
- </div>  -->
+<div id="about">
+<div class="center">
+<a href="#landPic"><i class="material-icons bigIcon">keyboard_arrow_up</i></a>
+<br>
+ 	<i class="material-icons bigIcon">present_to_all</i>
+ 	<i class="material-icons bigIcon">explore</i>
+ 	<i class="material-icons bigIcon">gavel</i>
+ 	<br>
+	 <h1>Share</h1><h1>Discover</h1><h1>Judge</h1>
+	 </div>
+	 <h3>At BloonBlow, you can share any idea you want by "Blowing a Bloon", we can't promise that people will love it, we can only promise to deliver a fast and simple platform where you can hang out.<br><br>Explore others ideas easily and be inspired by thinkers from all over the world and share their ideas seamlessly on Facebook and Twitter. You can find anything on BloonBlow, from complex and well though-out statements, to half drunken suggestions.<br><br> On BloonBlow you can do what people love to do most online, judge. Through a simple voting system you can judge other peoples Bloons and either Blow them up, or Pop them. By looking at the Blows and Pops, BloonBlow sets a grade on your Bloon, so you can see if it's the best idea ever, or if it's just okay.</h3>
+</div>
+</div>

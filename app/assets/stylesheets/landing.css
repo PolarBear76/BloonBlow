@@ -1,0 +1,153 @@
+.landIcon {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    height: 4vw;
+    width: 4vw;
+    margin-top: -10px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.logBtn {
+position: absolute;
+top: 15px;
+right: 25px;
+padding-bottom: 10px;
+background-color: #34495e;
+border: #34495e;
+}
+
+.landingBtn {
+width: 10%;
+height: 5%;
+min-height: 40px;
+min-width: 105px;
+padding-bottom: 10px;
+}
+
+.downBtn {
+  position: absolute;
+  bottom:30%;
+  left: 45%;
+  z-index: 1;
+  /*color: #34495e;*/
+  color: white !important;
+}
+
+.landheader {
+ position: absolute;
+ text-align: center;
+ top: -15px;
+ right: 5%;
+ vertical-align: middle;
+ border-radius: 5px;
+ /*right: 32%;*/
+ /*top: 35px;*/
+ background-color:rgba(236, 240, 241,0.6);
+ margin-top: 25px;
+ padding-bottom: 5px;
+ padding-top: -10px;
+}
+
+.landheader h1 {
+  color: #34495e;
+  display: inline-block;
+  font-size: 6vw;
+}
+
+.landDiv {
+  z-index: 2;
+  position: absolute;
+  top: 80px;
+  right: 5%;
+  width: 45%;
+  /*height: 20%;*/
+  background-color:rgba(236, 240, 241,0.8);
+  text-align: center;
+  border-radius: 5px;
+  /*min-height: 250px;*/
+  min-width: 350px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.landDiv h2 {
+    /*text-align: left;*/
+    color: #34495e;
+    line-height: 6.5vw;
+}
+
+.landDiv h1 {
+    color: #34495e;
+}
+
+#landPic {
+  width:100%;
+  height: auto;
+  position: relative;
+}
+
+.smallest {
+    font-size: 1.8vw;
+}
+
+.middle {
+    font-size: calc(1vw + 18px);
+}
+
+.biggest {
+    font-size:3vw;
+     color: #2c3e50;
+}
+
+
+#about .bigIcon {
+  margin-left: 40px;
+  margin-right: 40px;
+  color: #2c3e50;
+  text-align: right;
+}
+
+#about h1{
+margin-right: 30px;
+margin-left: 30px;
+text-align: center;
+display: inline-block;
+}
+
+.brandPic{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin-top:2px;
+}
+
+#about {
+  background-color: rgba(236, 240, 241,0.6);
+  width: 100%;
+  z-index: 2;
+  height: auto;
+  padding: 25px;
+}
+
+.abhediv {
+    line-height: 1vw;
+    text-align: center;
+}
+
+.aboutHeader {
+    font-size: calc(3vw + 20px);
+     color: #99ffcc;
+}
+
+#readmore {
+  position: absolute;
+  left: 49%;
+}

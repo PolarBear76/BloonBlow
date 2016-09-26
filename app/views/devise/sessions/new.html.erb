@@ -1,25 +1,24 @@
-
-<center>
-
-<div class="panel panel2 panel1 panel-default wide">
+<div class="panel panel2 panel1 panel-default wide center">
   <div class="panel-heading">
     <%= link_to :back do %>
-  <span class="glyphicon glyphicon-menu-left accentFont left"></span>
-  <% end %>
+      <span class="glyphicon glyphicon-menu-left left"></span>
+    <% end %>
+    
     <div class="panel-title wide">
       <h1>Log in</h1>
     </div>
   </div>
+
   <div class="panel-body wide">
     <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
       
       <div class="form-group wide">
-        <i class="material-icons accentFont bigIcon">face</i>
+        <i class="material-icons bigIcon">face</i>
         <%= f.email_field :email, class: "form-control field", :autofocus => true, placeholder: "Email Adress"  %>
       </div>
 
       <div class="form-group wide">
-        <i class="material-icons accentFont bigIcon">lock_outline</i>
+        <i class="material-icons bigIcon">lock_outline</i>
         <%= f.password_field :password, class: "form-control field", placeholder: "Password" %>
       </div>
 
@@ -41,4 +40,3 @@
     <%= render "devise/shared/links" %>
   </div>
 </div>
-</center>

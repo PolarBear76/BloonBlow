@@ -1,21 +1,21 @@
 <%= link_to :back do %>
   <span class="glyphicon glyphicon-menu-left accentFont left"></span>
   <% end %>
-<center>
+<div class="container center">
 
-<%= image_tag(@user.avatar.url(:medium), class: "profimg") %> 
+  <%= image_tag(@user.avatar.url(:medium), class: "profimg") %> 
 	<h1 class="darkpurpleFont"><%= @user.name %></h1>
 
 <!-- <table id="followTable">  
-<tr><td class="followCell"><h1 class="accentFont"> <%= @user.followers_count %></h1></td><td><h1> Followers</h1></td></tr> 
+<tr><td class="followCell"><h1 class="accentFont"> <%= @user.followers_count %></h1></td><td><h1> Fans</h1></td></tr> 
 </table>
 <br>
 
 <table id="followTable"> 
-<tr><td class="followCell"><h1 class="accentFont"> <%= @user.follow_count %></h1></td><td><h1> Following</h1></td></tr> 
+<tr><td class="followCell"><h1 class="accentFont"> <%= @user.follow_count %></h1></td><td><h1> Idols</h1></td></tr> 
 </table>
 
-<%= link_to "Follow", follow_user_path(@user),class: "btn accentColor btn-lg"%> -->
+<%= link_to "Join fanclub", follow_user_path(@user),class: "btn accentColor btn-lg"%> -->
 
 <hr>
 
@@ -43,4 +43,4 @@
  
  </div> 
 
-</center>
+</div>

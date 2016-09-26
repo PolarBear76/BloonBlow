@@ -1,100 +1,47 @@
 <div class="row">
 	<div class="col-md-offset-2 col-md-8">
 	<%= link_to :back do %>
-  <span class="glyphicon glyphicon-menu-left accentFont left back"></span>
-  <% end %>
-		<div class="panel panel-default">
-
-		<div class="panel-heading">
-		<center>
-
+ 	 <span class="glyphicon glyphicon-menu-left accentFont left back"></span>
+  	<% end %>
+<div class="panel panel-default">
+	<div class="panel-heading center">
   		<%= link_to like_pin_path(@pin), method: :put do %>
-		<i id ="blow" class="pnb material-icons blue">blur_on</i>
+			<i class="pnb material-icons blue blow">blur_on</i>
 		<% end %>
-
 		<p class="pnbsm accentFont"><%= @pin.get_upvotes.size %></p>
-
-			<%= image_tag @pin.image.url(:medium), class: "pinPic" %>
-
-			
-			<%= link_to dislike_pin_path(@pin), method: :put do %>
-		<i id ="pop" class="pnb material-icons deleteColor">flare</i>
+		<%= image_tag @pin.image.url(:medium), class: "pinPic" %>	
+		<%= link_to dislike_pin_path(@pin), method: :put do %>
+			<i class="pnb material-icons deleteColor pop">flare</i>
 		<% end %>
-
-
 		<p class="pnbsm accentFont"><%= @pin.get_downvotes.size %></p>
-		</center>
-		</div>
-		<div class="panel-body">
-		<p><%= @pin.description %></p>
-</center>
-
-
-		<br>
-		<% if @pin.user == current_user %>
+	</div>
+	<div class="panel-body">
+	<% if @pin.user == current_user %>
 			<%= link_to edit_pin_path(@pin) do %>
-        <span class="glyphicon glyphicon-edit accentFont"></span>
-            
-      <% end %>
-
-      <%= link_to @pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
-              <span class="glyphicon glyphicon-trash deleteColor"></span>
-            <% end %>
-
+        			<span class="glyphicon glyphicon-edit accentFont right"></span>
+      			<% end %>
+			<%= link_to @pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
+              			<span class="glyphicon glyphicon-trash deleteColor right"></span>
+           		 <% end %>
 		<% end %>
+		<p><%= @pin.description %></p>
+		<br>
+		<br>
+		<p class="darkpurpleFont"><%= @pin.tag_list %>
+		<div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
+		<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Great%20Bloon!" data-size="large">Tweet</a>
 		<hr>
-<div class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
-<a class="twitter-share-button"
-  href="https://twitter.com/intent/tweet?text=Great%20Bloon!"
-  data-size="large">
-Tweet</a>
-
+		<h3>Score:</h3>
+		<h1 class="accentFont"><%= @pin.get_upvotes.size-@pin.get_downvotes.size %></h1>
 		<hr>
-		<p class="smallFont"> Based on other users feedback, this idea is:</p>
-
-		<% if @pin.get_downvotes.size && @pin.get_upvotes.size == 0 %>
-		<h4 class="neutral grade">Neutral</h4>
-		<% else %>
-
-		<% if @pin.get_downvotes.size/@pin.get_upvotes.size <= 1 && @pin.get_downvotes.size/@pin.get_upvotes.size >= 0.8 %>
-		<h4 class="orange grade">Okay</h4>
-
-<% elsif @pin.get_downvotes.size/@pin.get_upvotes.size <= 0.8 && @pin.get_downvotes.size/@pin.get_upvotes.size >= 0.7 %>
-<h4 class="lightgreen grade">Good</h4>
-<% elsif @pin.get_downvotes.size/@pin.get_upvotes.size <= 0.7 && @pin.get_downvotes.size/@pin.get_upvotes.size >= 0.5 %>
-<h4 class="accentFont grade">Great!</h4>
-<% elsif @pin.get_downvotes.size/@pin.get_upvotes.size <= 0.5 && @pin.get_downvotes.size/@pin.get_upvotes.size >= 0.3 %>
-<h4 class="supergreen grade">Amazing!</h4>
-<% elsif @pin.get_downvotes.size/@pin.get_upvotes.size == 0 %>
-<h4 class="supergreen grade">The Best Idea Ever!</h4>
-<% elsif @pin.get_downvotes.size/@pin.get_upvotes.size >= 1 && @pin.get_downvotes.size/@pin.get_upvotes.size <= 1.2 %>
-<h4 class="redorange grade">Not So Good</h4>
-<% elsif @pin.get_downvotes.size/@pin.get_upvotes.size >= 1.2 && @pin.get_downvotes.size/@pin.get_upvotes.size <= 1.3 %>
-<h4 class="lightred grade">Bad</h4>
-<% elsif @pin.get_downvotes.size/@pin.get_upvotes.size >= 1.3 && @pin.get_downvotes.size/@pin.get_upvotes.size <= 1.5 %>
-<h4 class="red grade">Horrible</h4>
-<% elsif @pin.get_downvotes.size/@pin.get_upvotes.size >= 1.5 && @pin.get_downvotes.size/@pin.get_upvotes.size <= 1.7 %>
-<h4 class="darkred grade">A Child of the Underwold</h4>
-
-<% end %>
-
-		<% end %>
-		<hr>
-		
-<center>
-	<%= link_to @pin.user do %>
-	<%= image_tag(@pin.user.avatar.url(:medium), class: "profimgmd") %> 
-	<p class="userFont"><strong><%= @pin.user.name if @pin.user %></strong></p>
-	<% end %>
-</center>
-
+		<div class="center">
+			<%= link_to @pin.user do %>
+				<%= image_tag(@pin.user.avatar.url(:medium), class: "profimgmd") %> 
+				<p class="userFont"><strong><%= @pin.user.name if @pin.user %></strong></p>
+			<% end %>
+		</div>
 		</div>
 	</div>
-
 </div>
-</center>
+
 
