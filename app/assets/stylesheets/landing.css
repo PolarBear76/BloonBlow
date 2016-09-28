@@ -118,6 +118,7 @@ margin-right: 30px;
 margin-left: 30px;
 text-align: center;
 display: inline-block;
+font-size: 3vw;
 }
 
 .brandPic{
@@ -143,8 +144,8 @@ display: inline-block;
 }
 
 .aboutHeader {
-    font-size: calc(3vw + 20px);
-     color: #99ffcc;
+    font-size: 3vw !important;
+     color: red;
 }
 
 #readmore {
