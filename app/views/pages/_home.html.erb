@@ -1,14 +1,10 @@
 <div id="landPic">
-	<%= image_tag('landpic.jpg')%> 
+	<%= image_tag('landpic.jpg', class: "piccie")%> 
 	
 	<div class="btn btn-primary logBtn">
         	<%= link_to "LOGIN", new_user_session_path, class: "white-link" %>
 	</div>
-	<!-- <div class="landheader"> -->
-			<!-- <%= image_tag('icon.jpg', class: 'landIcon') %>  <h1>BloonBlow</h1> -->
-		<!-- </div> -->
 	<div class="landDiv right"> 
-		<!-- <p><span class="smallest">Share your ideas easy</span> <br><span class="middle">Discover ideas from all over the world</span> <br><span class="biggest">Judge. Everything.</span></p> -->
 		<%= image_tag('icon.jpg', class: 'landIcon inline') %>  <h1 class="inline biggest">BloonBlow</h1>
 		<h2 class="middle">Share, Discover and Judge ideas</h2>
  		<%= link_to "Get Started", new_user_registration_path, class: "btn accentColor btn-lg" %>
