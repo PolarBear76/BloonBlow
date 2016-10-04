@@ -18,6 +18,12 @@ class PinsController < ApplicationController
   def show
   end
 
+  def add_new_comment
+    pin = Pin.find(params[:id])
+    pin.comments << Pin.new(params[:comment])
+    redirect_to :action => :show, :id => pin
+  end
+
   def new
     @pin = current_user.pins.build
   end
