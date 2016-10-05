@@ -33,10 +33,6 @@
 		<h3>Score:</h3>
 		<h1 class="accentFont"><%= @pin.get_upvotes.size-@pin.get_downvotes.size %></h1>
 
-		<!-- <%= form_tag add_new_comment_to_pins_path do %> 
-    	<%= hidden_field_tag "id", @pin.id %>
-   	 <%= text_area_tag "comment[comment]" %>
-   	 <%= submit_tag "Comment" %> -->
   <% end %>
 		<hr>
 		<div class="center">
