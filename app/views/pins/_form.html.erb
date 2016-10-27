@@ -1,7 +1,7 @@
 <%= form_for @pin, html: { multipart: true } do |f| %>
   <% if @pin.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@pin.errors.count, "error") %> prohibited this bloon from being blown:</h2>
+      <h4><%= pluralize(@pin.errors.count, "error") %> prohibited this bloon from being blown:</h4>
       <ul>
         <% @pin.errors.full_messages.each do |msg| %>
           <li class="deletecolor"><%= msg %></li>

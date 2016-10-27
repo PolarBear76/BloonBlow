@@ -11,17 +11,10 @@ class PinsController < ApplicationController
 
 
   def index
-     # @pins = Pin.subscribed current_user.followers
-     @pins = Pin.all.order("created_at DESC")
+    @pins = Pin.all.order("created_at DESC")
   end
 
   def show
-  end
-
-  def add_new_comment
-    pin = Pin.find(params[:id])
-    pin.comments << Pin.new(params[:comment])
-    redirect_to :action => :show, :id => pin
   end
 
   def new
@@ -82,7 +75,7 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pin_params
-      params.require(:pin).permit(:description, :image, :tag_list)
+      params.require(:pin).permit(:description, :image)
     end
 
     
