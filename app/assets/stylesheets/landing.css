@@ -62,7 +62,7 @@ padding-bottom: 10px;
   z-index: 2;
   position: absolute;
   top: 80px;
-  right: 5%;
+  right: 2%;
   width: 45%;
   /*height: 20%;*/
   background-color:rgba(236, 240, 241,0.8);
@@ -174,9 +174,18 @@ font-size: 3vw;
       #landpic {
         background-color: #16a085;
       }
+
+      .landDiv {
+        position: static;
+        width: 70%;
+        margin-right: 15%;
+        margin-top: 15%;
+
+
+      }
  }
 
  .turqoise {
-  background-color: #e67e22;
+  background-color: #d35400;
   color: white;
  }
