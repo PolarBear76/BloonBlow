@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   devise_for :users
-
   # match "/pins/add_new_comment" => "pin#add_new_comment", :as => "add_new_comment_to_pins", :via => [:pin]
 resources :users do
     member do

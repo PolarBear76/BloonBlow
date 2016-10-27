@@ -159,7 +159,24 @@ font-size: 3vw;
   left: 49%;
 }
 
-.piccie {
-    height: 100%;
-    width:100%;
-}
+ @media only screen and (max-width:960px){
+      /*body {
+        background-color: #16a085;
+      }*/
+      .piccie {
+        display: none;
+      }
+
+      a[href*="#"] {
+        display: none;
+      }
+
+      #landpic {
+        background-color: #16a085;
+      }
+ }
+
+ .turqoise {
+  background-color: #e67e22;
+  color: white;
+ }
