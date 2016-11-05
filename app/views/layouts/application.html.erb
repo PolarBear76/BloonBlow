@@ -11,6 +11,16 @@
     <meta property="og:description"        content= "A Bloon from from the BloonBlow!" /> 
     <link rel="shortcut icon" href="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/14192617_1302097283164379_7480952122596209542_n.jpg?oh=c6725cf5f8ed27c12074be26eb50c775&oe=584966AF" type="image/x-icon" /> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <% unless user_signed_in? %>
+    <style>
+    @media only screen and (max-width:900px){
+      body {
+        background-color: #9b59b6;
+      }
+ }
+ </style>
+      
+    <%end%>
   </head>
   <body>
     <% if user_signed_in? %>

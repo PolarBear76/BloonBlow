@@ -164,10 +164,6 @@ font-size: 3vw;
         display: none;
       }
 
-      body {
-        background-color: #9b59b6;
-      }
-
       a[href*="#"] {
         display: none;
       }
