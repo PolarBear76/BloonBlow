@@ -147,8 +147,8 @@ font-size: 3vw;
 
 .aboutHeader {
 color: #2c3e50;
-margin-right: 10%;
-margin-left: 7%;
+/*margin-right: 10%;
+margin-left: 7%;*/
 text-align: center;
 display: inline-block;
 font-size: 3vw;
@@ -159,12 +159,13 @@ font-size: 3vw;
   left: 49%;
 }
 
- @media only screen and (max-width:960px){
-      /*body {
-        background-color: #16a085;
-      }*/
+ @media only screen and (max-width:900px){
       .piccie {
         display: none;
+      }
+
+      body {
+        background-color: #9b59b6;
       }
 
       a[href*="#"] {
@@ -176,13 +177,19 @@ font-size: 3vw;
       }
 
       .landDiv {
-        position: static;
+        position: relative;
         width: 70%;
         margin-right: 15%;
         margin-top: 15%;
-
-
+        margin: auto;
+        float: none;
+        /*background-color: #bdc3c7;*/
       }
+
+      #about {
+        background-color: #ecf0f1;
+      }
+
  }
 
  .turqoise {
