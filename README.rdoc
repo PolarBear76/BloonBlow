@@ -1,1 +1,3 @@
-A new version of my website Crunsher wich had a lot of errors. This new version includes better design and more functionality.
+An idea uploading site where you an create a profile, upload pictures and text and like other users uploads. 
+
+Using Ruby on Rails
